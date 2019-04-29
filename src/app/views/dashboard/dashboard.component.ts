@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 
+
+
 @Component({
   templateUrl: 'dashboard.component.html'
 })
@@ -17,7 +19,9 @@ export class DashboardComponent implements OnInit {
       label: 'Series A'
     }
   ];
+
   public lineChart1Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+
   public lineChart1Options: any = {
     tooltips: {
       enabled: false,
@@ -59,12 +63,14 @@ export class DashboardComponent implements OnInit {
       display: false
     }
   };
+
   public lineChart1Colours: Array<any> = [
     {
       backgroundColor: getStyle('--primary'),
       borderColor: 'rgba(255,255,255,.55)'
     }
   ];
+
   public lineChart1Legend = false;
   public lineChart1Type = 'line';
 
@@ -75,6 +81,7 @@ export class DashboardComponent implements OnInit {
       label: 'Series A'
     }
   ];
+
   public lineChart2Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   public lineChart2Options: any = {
     tooltips: {
@@ -118,12 +125,14 @@ export class DashboardComponent implements OnInit {
       display: false
     }
   };
+
   public lineChart2Colours: Array<any> = [
     { // grey
       backgroundColor: getStyle('--info'),
       borderColor: 'rgba(255,255,255,.55)'
     }
   ];
+
   public lineChart2Legend = false;
   public lineChart2Type = 'line';
 
@@ -135,6 +144,7 @@ export class DashboardComponent implements OnInit {
       label: 'Series A'
     }
   ];
+  
   public lineChart3Labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   public lineChart3Options: any = {
     tooltips: {

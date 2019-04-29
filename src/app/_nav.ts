@@ -11,9 +11,10 @@ export interface NavData {
   class?: string;
 }
 
+
 export const navItems: NavData[] = [
   {
-    name: 'Tablero',
+    name: 'Menu',
     url: '/dashboard',
     icon: 'icon-speedometer',
     badge: {
@@ -23,15 +24,25 @@ export const navItems: NavData[] = [
   },
   {
     title: true,
-    name: 'Usuario'
+    name: 'Configuración'
   },
   {
-    name: 'Colors',
-    url: '/theme/colors',
+    name: 'Insertar registro',
+    url: '/insertar-registro',
     icon: 'icon-drop'
   },
   {
-    name: 'Scripts',
+    name: 'Consultar registro',
+    url: '/theme/typography',
+    icon: 'icon-pencil'
+  },
+  {
+    name: 'Actualizar registro',
+    url: '/theme/typography',
+    icon: 'icon-pencil'
+  },
+  {
+    name: 'Eliminar registro',
     url: '/theme/typography',
     icon: 'icon-pencil'
   },

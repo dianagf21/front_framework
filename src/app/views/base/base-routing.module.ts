@@ -100,7 +100,7 @@ const routes: Routes = [
         data: {
           title: 'Tooltips'
         }
-      }
+      }      
     ]
   }
 ];

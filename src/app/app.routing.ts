@@ -9,12 +9,15 @@ import { P500Component } from './views/error/500.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 
+
+
 export const routes: Routes = [
+  //Arranque por defecto para el container-fluid
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'insertar-registro',
     pathMatch: 'full',
-  },
+  }, 
   {
     path: '404',
     component: P404Component,
@@ -63,8 +66,8 @@ export const routes: Routes = [
         loadChildren: './views/chartjs/chartjs.module#ChartJSModule'
       },
       {
-        path: 'dashboard',
-        loadChildren: './views/dashboard/dashboard.module#DashboardModule'
+        path: 'insertar-registro',
+        loadChildren: './views/insertar-registro/insertar-registro.module#InsertarRegistroModule'
       },
       {
         path: 'icons',
@@ -81,11 +84,13 @@ export const routes: Routes = [
       {
         path: 'widgets',
         loadChildren: './views/widgets/widgets.module#WidgetsModule'
-      }
+      },     
     ]
   },
   { path: '**', component: P404Component }
 ];
+
+
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
