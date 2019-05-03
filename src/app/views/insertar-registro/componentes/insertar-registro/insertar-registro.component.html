@@ -4,7 +4,257 @@
         <tabset>
           <tab>
             <ng-template tabHeading><i class="icon-list"></i> Legado &nbsp;<span class="badge badge-success">New</span></ng-template>
-            
+            <div class="card">
+                <div class="card-header">
+                  <strong>Tabla Legado</strong> 
+                </div>
+                <div class="card-body">
+                  <form class="form-horizontal">                    
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="text-input">Legacy register id</label>
+                      <div class="col-md-9">
+                        <input type="number" id="id-legado" name="id-legado" class="form-control col-sm-2" placeholder="Legacy id">
+                        <span class="help-block">El id asociado a este registro de legado</span>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="id-aplicacion">Legacy application id</label>
+                      <div class="col-md-9">
+                        <input type="number" id="id-aplicacion" name="id-aplicacion" class="form-control col-sm-2" placeholder="Aplication id">
+                        <span class="help-block">El id asociado a aplicacion legado</span>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="nombre-operacion">Legacy operation name</label>
+                        <div class="col-md-9">
+                          <input type="text" id="nombre-operacion" name="nombre-operacion" class="form-control col-sm-6" placeholder="Operation name">
+                          <span class="help-block">El nombre de operación para este legado</span>
+                        </div>
+                    </div>                    
+
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="name-xslt-in">XSLT in</label>
+                        <div class="col-md-9">
+                          <input type="text" id="name-xslt-in" name="name-xslt-in" class="form-control col-sm-8" placeholder="Xslt in">
+                          <span class="help-block">El nombre del XSLT de entrada para el legado precedido por su namepace</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="name-xslt-out">XSLT out</label>
+                        <div class="col-md-9">
+                          <input type="text" id="name-xslt-out" name="name-xslt-out" class="form-control col-sm-8" placeholder="XSLT out">
+                          <span class="help-block">El nombre del XSLT de salida para el legado precedido por su namepace</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="id-adapter">Adapter</label>
+                        <div class="col-md-9">
+                          <select id="id-adapter" name="id-adapter" class="form-control col-sm-3">
+                            <option value="0">Seleccione adaptador</option>
+                            <option value="8">Json</option>
+                            <option value="9">Rest</option>
+                            <option value="6">Broker</option>
+                            <option value="7">File</option>
+                            <option value="5">MQ</option>
+                            <option value="1">SOAP</option>
+                            <option value="2">DB</option>
+                            <option value="3">JMS</option>
+                            <option value="4">Email</option>
+                          </select>
+                        </div>
+                      </div>
+
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="password-input">Password</label>
+                      <div class="col-md-9">
+                        <input type="password" id="password-input" name="password-input" class="form-control" placeholder="Password" autocomplete="current-password">
+                        <span class="help-block">Please enter a complex password</span>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="date-input">Date Input</label>
+                      <div class="col-md-9">
+                        <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
+                        <span class="help-block">Please enter a valid date</span>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="disabled-input">Disabled Input</label>
+                      <div class="col-md-9">
+                        <input type="text" id="disabled-input" name="disabled-input" class="form-control" placeholder="Disabled" disabled>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="textarea-input">Textarea</label>
+                      <div class="col-md-9">
+                        <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="Content.."></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="select1">Select</label>
+                      <div class="col-md-9">
+                        <select id="select1" name="select1" class="form-control">
+                          <option value="0">Please select</option>
+                          <option value="1">Option #1</option>
+                          <option value="2">Option #2</option>
+                          <option value="3">Option #3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="select2">Select Large</label>
+                      <div class="col-md-9">
+                        <select id="select2" name="select2" class="form-control form-control-lg">
+                          <option value="0">Please select</option>
+                          <option value="1">Option #1</option>
+                          <option value="2">Option #2</option>
+                          <option value="3">Option #3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="select3">Select Small</label>
+                      <div class="col-md-9">
+                        <select id="select3" name="select3" class="form-control form-control-sm">
+                          <option value="0">Please select</option>
+                          <option value="1">Option #1</option>
+                          <option value="2">Option #2</option>
+                          <option value="3">Option #3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="disabledSelect">Disabled Select</label>
+                      <div class="col-md-9">
+                        <select id="disabledSelect" class="form-control" disabled>
+                          <option value="0">Please select</option>
+                          <option value="1">Option #1</option>
+                          <option value="2">Option #2</option>
+                          <option value="3">Option #3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="multiple-select">Multiple select</label>
+                      <div class="col-md-9">
+                        <select id="multiple-select" name="multiple-select" class="form-control" size="5" multiple>
+                          <option value="1">Option #1</option>
+                          <option value="2">Option #2</option>
+                          <option value="3">Option #3</option>
+                          <option value="4">Option #4</option>
+                          <option value="5">Option #5</option>
+                          <option value="6">Option #6</option>
+                          <option value="7">Option #7</option>
+                          <option value="8">Option #8</option>
+                          <option value="9">Option #9</option>
+                          <option value="10">Option #10</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" >Radios</label>
+                      <div class="col-md-9 col-form-label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radios" id="radio1" value="option1" checked>
+                          <label class="form-check-label" for="radio1">
+                            Option 1
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radios" id="radio2" value="option2">
+                          <label class="form-check-label" for="radio2">
+                            Option 2
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radios" id="radio3" value="option3">
+                          <label class="form-check-label" for="radio3">
+                            Option 3
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="inline-radios">Inline Radios</label>
+                      <div class="col-md-9 col-form-label">
+                        <div class="form-check form-check-inline mr-1" id="inline-radios">
+                          <input class="form-check-input" type="radio" name="inline-radios" id="inlineRadio1" value="option1">
+                          <label class="form-check-label" for="inlineRadio1">One</label>
+                        </div>
+                        <div class="form-check form-check-inline mr-1">
+                          <input class="form-check-input" type="radio" name="inline-radios" id="inlineRadio2" value="option2">
+                          <label class="form-check-label" for="inlineRadio2">Two</label>
+                        </div>
+                        <div class="form-check form-check-inline mr-1">
+                          <input class="form-check-input" type="radio" name="inline-radios" id="inlineRadio3" value="option3">
+                          <label class="form-check-label" for="inlineRadio3">Three</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">Checkboxes</label>
+                      <div class="col-md-9 col-form-label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="option1" id="checkbox1">
+                          <label class="form-check-label" for="checkbox1">
+                            Option 1
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="option1" id="checkbox2">
+                          <label class="form-check-label" for="checkbox2">
+                            Option 2
+                          </label>
+                        </div>
+                        <div class="form-check checkbox">
+                          <input class="form-check-input" type="checkbox" value="option1" id="checkbox3">
+                          <label class="form-check-label" for="checkbox3">
+                            Option 3
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">Inline Checkboxes</label>
+                      <div class="col-md-9 col-form-label">
+                        <div class="form-check form-check-inline mr-1">
+                          <input class="form-check-input" type="checkbox" id="inline-checkbox1" value="option1">
+                          <label class="form-check-label" for="inline-checkbox1">One</label>
+                        </div>
+                        <div class="form-check form-check-inline mr-1">
+                          <input class="form-check-input" type="checkbox" id="inline-checkbox2" value="option2">
+                          <label class="form-check-label" for="inline-checkbox2">Two</label>
+                        </div>
+                        <div class="form-check form-check-inline mr-1">
+                          <input class="form-check-input" type="checkbox" id="inline-checkbox3" value="option3">
+                          <label class="form-check-label" for="inline-checkbox3">Three</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="file-input">File input</label>
+                      <div class="col-md-9">
+                        <input type="file" id="file-input" name="file-input">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="file-multiple-input">Multiple File input</label>
+                      <div class="col-md-9">
+                        <input type="file" id="file-multiple-input" name="file-multiple-input" multiple>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                  <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                </div>
+              </div>
           </tab>
           <tab>
             <ng-template tabHeading><i class="icon-calculator"></i> AIF &nbsp;<span class="badge badge-pill badge-danger">29</span></ng-template>
