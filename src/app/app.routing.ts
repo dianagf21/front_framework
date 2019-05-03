@@ -70,6 +70,10 @@ export const routes: Routes = [
         loadChildren: './views/insertar-registro/insertar-registro.module#InsertarRegistroModule'
       },
       {
+        path: 'consultar-registro',
+        loadChildren: './views/consultar-registro/consultar-registro.module#ConsultarRegistroModule'
+      },
+      {
         path: 'icons',
         loadChildren: './views/icons/icons.module#IconsModule'
       },

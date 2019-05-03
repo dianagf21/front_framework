@@ -1,25 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InsertarRegistroComponent } from './componentes/insertar-registro/insertar-registro.component';
+import { ConsultarRegistroComponent } from './componentes/consultar-registro/consultar-registro.component';
 import {Routes, RouterModule} from '@angular/router'
 
 import { TabsModule } from 'ngx-bootstrap/tabs';
 
 
 const routes: Routes = [
-    {
-      path: '',
-      component: InsertarRegistroComponent,
-      data: {
-        title: 'Insertar registro'
-      }
+  {
+    path: '',
+    component: ConsultarRegistroComponent,
+    data: {
+      title: 'Consultar registro'
     }
-  ];
-
+  }
+];
 
 
 @NgModule({
-  declarations: [InsertarRegistroComponent],
+  declarations: [ConsultarRegistroComponent],
   imports: [
     CommonModule, 
     RouterModule.forChild(routes),
@@ -29,4 +28,4 @@ const routes: Routes = [
       RouterModule
   ]
 })
-export class InsertarRegistroModule { }
+export class ConsultarRegistroModule { }

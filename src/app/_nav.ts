@@ -33,7 +33,7 @@ export const navItems: NavData[] = [
   },
   {
     name: 'Consultar registro',
-    url: '/theme/typography',
+    url: '/consultar-registro',
     icon: 'icon-pencil'
   },
   {
